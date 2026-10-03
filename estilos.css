@@ -1,0 +1,96 @@
+/* VARIABLES */
+
+*  {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+
+    --color-principal: #159A9C;
+    --color-secundario: #176B87;
+    --color-títulos: #123B4A;
+    --color-fondo-body: #F4F1E8;
+    --color-fondo-header: #0F7C7E;
+    --color-fondo-footer: #082C3A;
+    --color-hipervinculo: #E5B85C;
+
+}
+
+/* BODYS */
+
+body {
+    
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+}
+
+
+.body-contacto {
+
+    background-color: var(--color-fondo-body);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.link-body-contacto {
+
+    color: var(--color-hipervinculo);
+    text-decoration: none;
+}
+
+.h1-contacto {
+
+    color: var(--color-fondo-body);
+
+}
+
+.h2-contacto {
+
+    color: var(--color-fondo-body);
+
+}
+
+/* HEADERS */
+
+.header-contacto {
+
+    background-color: var(--color-fondo-header);
+
+}
+
+/* MAINS */
+
+.h3-contacto {
+
+    color: var(--color-títulos);
+
+}
+
+.p-contacto {
+
+    color: var(--color-títulos);
+
+}
+
+
+/* FOOTERS */
+
+.footer-contacto {
+
+    background-color: var(--color-fondo-footer);
+
+}
+
+.link-footer-contacto {
+
+    color: var(--color-hipervinculo);
+    text-decoration: none;
+
+}
