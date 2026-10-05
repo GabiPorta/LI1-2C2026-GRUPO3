@@ -27,20 +27,30 @@
     </header>
     <main>
       <div>
-        <form>
+        <form class="formulario">
           <h3 class="h3-contacto">Contactanos</h3>
           <p class="p-contacto">¿Tienes alguna pregunta? ¡Contáctanos!</p>
           <p class="p-contacto"><strong>Teléfono: </strong>+54 299 555-0187</p>
           <p class="p-contacto">
             <strong>Correo Electrónico: </strong>contacto@bahiaesmeralda.com.ar
           </p>
-          <label for="nombre">Escribe tu nombre</label>
-          <input type="text" id="nombre" class="box" />
-          <label for="correo">Escribe tu correo</label>
-          <input type="email" id="correo" class="box" />
-          <label for="mensaje">Escribe tu mensaje</label>
-          <textarea id="mensaje" cols="40" rows="5"></textarea>
-          <input type="submit" value="Enviar" class="submit" />
+          <div class="formulario-box">
+            <label for="nombre"><strong>Escribe tu nombre</strong></label>
+          <input type="text" id="nombre" class="box-input-contacto" />
+          </div>
+          <div class="formulario-box">
+            <label for="correo"><strong>Escribe tu correo</strong></label>
+          <input type="email" id="correo" class="box-input-contacto" />
+          </div>
+          <div class="formulario-box">
+            <label for="telefono"><strong>Escribe tu teléfono</strong></label>
+          <input type="tel" id="telefono" class="box-input-contacto" />
+          </div>
+          <div class="formulario-box">
+            <label class="label-formulario" for="mensaje"><strong>Escribe tu mensaje</strong></label>
+          <textarea id="mensaje" cols="40" rows="5" class="mensaje"></textarea>
+          <input type="submit" value="Enviar" class="submit-formulario" />
+          </div>
         </form>
       </div>
     </main>

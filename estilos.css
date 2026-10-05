@@ -26,14 +26,14 @@ body {
     
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-
+    line-height: 1.6;
+    max-width: 100%;
 }
 
 
 .body-contacto {
 
     background-color: var(--color-fondo-body);
-    line-height: 1.6;
     display: flex;
     flex-direction: column;
 
@@ -43,17 +43,20 @@ body {
 
     color: var(--color-hipervinculo);
     text-decoration: none;
+    padding: 0 10px;
 }
 
 .h1-contacto {
 
     color: var(--color-fondo-body);
+    padding: 0 10px;
 
 }
 
 .h2-contacto {
 
     color: var(--color-fondo-body);
+    padding: 0 10px;
 
 }
 
@@ -70,15 +73,62 @@ body {
 .h3-contacto {
 
     color: var(--color-títulos);
+    margin: 20px 0 10px 0;
+    padding: 0 10px;
 
 }
 
 .p-contacto {
 
     color: var(--color-títulos);
+    margin: 20px 0 10px 0;
+    padding: 0 10px;
 
 }
 
+.formulario-box {
+
+    display: flex;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.formulario-box label {
+
+    width: 100px;
+    padding: 0 10px;
+    color: var(--color-títulos);
+
+}
+
+.box-input-contacto {
+
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.mensaje {
+
+    width: 600px;
+    height: 206px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.submit-formulario {
+
+    background-color: var(--color-principal);
+    color: var(--color-fondo-body);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
 
 /* FOOTERS */
 
@@ -92,5 +142,6 @@ body {
 
     color: var(--color-hipervinculo);
     text-decoration: none;
+    padding: 0 10px;
 
 }
