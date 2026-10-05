@@ -105,7 +105,7 @@ body {
 .box-input-contacto {
 
     width: 300px;
-    height: 40px;
+    height: 45px;
     box-sizing: border-box;
     padding: 5px;
 }
@@ -113,7 +113,7 @@ body {
 .mensaje {
 
     width: 600px;
-    height: 206px;
+    height: 236px;
     box-sizing: border-box;
     padding: 5px;
 }
@@ -127,6 +127,14 @@ body {
     cursor: pointer;
     margin-top: 10px;
     margin-left: 10px;
+
+}
+
+.link-contacto {
+
+    color: var(--color-fondo-footer);
+    text-decoration: none;
+    padding: 0 10px;
 
 }
 
