@@ -174,7 +174,79 @@ body {
 
 }
 
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Multimedia/Imagen/ciudad-esmeralda.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero-content{
+    max-width: 800px;
+}
+
+.hero-content h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-content .eslogan{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #4ee1c7;
+    margin-bottom: 20px;
+
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: 12px 28px;
+
+    background-color: #0c4757;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary{
+    background-color: #4ee1c7;
+    color: #28778d;
+    transform: translateY(-2px);
+}
+.btn-primary:active{
+    transform: translateY(0);
+}
+
 /* FOOTERS */
+.copyright-footer{
+    background-color: #05323f;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 .footer-contacto {
 
