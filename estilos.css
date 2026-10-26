@@ -31,7 +31,7 @@ body {
 }
 
 
-.body-contacto {
+.body {
 
     background-color: var(--color-fondo-body);
     display: flex;
@@ -39,21 +39,21 @@ body {
 
 }
 
-.link-body-contacto {
+.link-body {
 
     color: var(--color-hipervinculo);
     text-decoration: none;
     padding: 0 10px;
 }
 
-.h1-contacto {
+.h1 {
 
     color: var(--color-fondo-body);
     padding: 0 10px;
 
 }
 
-.h2-contacto {
+.h2 {
 
     color: var(--color-fondo-body);
     padding: 0 10px;
@@ -98,7 +98,7 @@ body {
     color: #4ee1c7;
 }
 
-.header-contacto {
+.header {
 
     background-color: var(--color-fondo-header);
 
@@ -106,7 +106,7 @@ body {
 
 /* MAINS */
 
-.h3-contacto {
+.h3 {
 
     color: var(--color-títulos);
     margin: 20px 0 10px 0;
@@ -114,7 +114,7 @@ body {
 
 }
 
-.p-contacto {
+.p {
 
     color: var(--color-títulos);
     margin: 20px 0 10px 0;
@@ -239,22 +239,19 @@ body {
 }
 
 /* FOOTERS */
-.copyright-footer{
+
+.footer {
+
     background-color: #05323f;
     text-align: center;
     padding: 15px 20px;
     font-size: 0.85rem;
     color: #a0a0a0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-contacto {
-
-    background-color: var(--color-fondo-footer);
 
 }
 
-.link-footer-contacto {
+.link-footer {
 
     color: var(--color-hipervinculo);
     text-decoration: none;
