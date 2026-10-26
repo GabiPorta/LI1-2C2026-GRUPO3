@@ -305,3 +305,27 @@ body {
     line-height: 1.6;
     color: #333;
 }
+/* ======================================
+   SECCIÓN HABITACIONES — Estilos propios
+   ====================================== */
+
+/* Precio destacado */
+.precio {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px dashed #ddd;
+}
+
+/* Asegurar que todas las tarjetas tengan el mismo alto */
+.tarjeta-lugar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tarjeta-lugar p:last-of-type {
+    margin-top: auto;
+}
