@@ -233,46 +233,20 @@ body {
     transform: translateY(0);
 }
 
-.galeria-lugares {
-    display: grid;
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.tarjeta-lugar {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-}
-
-.tarjeta-lugar img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 0.8rem 0 1.2rem;
-    display: block;
-}
-
 /* FOOTERS */
-.copyright-footer{
+
+.footer {
+
     background-color: #05323f;
     text-align: center;
     padding: 15px 20px;
     font-size: 0.85rem;
     color: #a0a0a0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer {
-
-    background-color: var(--color-fondo-footer);
 
 }
 
-.link-footer-contacto {
+.link-footer {
 
     color: var(--color-hipervinculo);
     text-decoration: none;
