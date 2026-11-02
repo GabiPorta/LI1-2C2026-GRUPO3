@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Habitaciones — Paraíso Azul</title>
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="body">
+
+    <!-- Cabecera -->
+   <header class="navbar">
+            <h1 class="logo">🌊 Bahia Esmeralda</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ciudad.html">Ciudad</a></li>
+                    <li><a href="lugares.html">Lugares</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <h2 class="h2">Nuestras Habitaciones</h2>
+        <p class="p">Disfruta de una estadía inolvidable en nuestras instalaciones. Cada habitación está diseñada para ofrecerte comodidad, vistas espectaculares y el descanso que mereces.</p>
+
+        <section class="galeria-lugares">
+            
+            <!-- Habitación 1 -->
+            <article class="tarjeta-lugar" id="standard">
+                <h3>Habitación Estándar</h3>
+                <img src="Multimedia/Imagen/habitacion-estandar.jpg" alt="Habitación Estándar con vista al jardín" loading="lazy">
+                <p>Acogedora y luminosa, ideal para parejas. Cuenta con cama doble, baño privado, aire acondicionado y balcón con vista a los jardines tropicales.</p>
+                <p><strong>Capacidad:</strong> 2 personas</p>
+                <p><strong>Servicios:</strong> Wi-Fi gratis, TV, minibar</p>
+                <p class="precio">Desde $85.000 por noche</p>
+            </article>
+
+            <!-- Habitación 2 -->
+            <article class="tarjeta-lugar" id="deluxe">
+                <h3 class="h3">Deluxe Vista al Mar</h3>
+                <img src="Multimedia/Imagen/habitacion-deluxe.jpg" alt="Habitación Deluxe con vista frontal al mar" loading="lazy">
+                <p>Amplia habitación con ventanales panorámicos. Disfruta del amanecer directamente desde tu cama. Incluye terraza privada, baño con bañera y servicio de habitaciones 24hs.</p>
+                <p><strong>Capacidad:</strong> 2 personas</p>
+                <p><strong>Servicios:</strong> Wi-Fi, TV Smart, desayuno incluido, caja fuerte</p>
+                <p class="precio">Desde $145.000 por noche</p>
+            </article>
+
+            <!-- Habitación 3 -->
+            <article class="tarjeta-lugar" id="suite">
+                <h3>Suite Presidencial</h3>
+                <img src="Multimedia/Imagen/habitacion-suite.jpg" alt="Suite Presidencial con piscina privada" loading="lazy">
+                <p>Nuestra opción más exclusiva: amplios espacios, sala de estar independiente y piscina privada sobre el mar. Diseñada para quienes buscan lo mejor. Atención personalizada incluida.</p>
+                <p><strong>Capacidad:</strong> Hasta 4 personas</p>
+                <p><strong>Servicios:</strong> Todo incluido, traslado privado, conserje, barra libre</p>
+                <p class="precio">Desde $320.000 por noche</p>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2026 Paraíso Azul — Todos los derechos reservados</p>
+        <p>Lenguajes Informáticos 1 | UNAHUR</p>
+    </footer>
+
 </body>
 </html>
