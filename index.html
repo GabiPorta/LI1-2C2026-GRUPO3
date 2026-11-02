@@ -3,20 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
         <link rel="stylesheet" href="estilos.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+             rel="stylesheet"
+        />
         <title>Bahia Esmeralda</title>
     </head>
     <body>
-        <header class="navbar">
-            <h1 class="logo">🌊 Bahia Esmeralda</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="ciudad.html">Ciudad</a></li>
-                    <li><a href="lugares.html">Lugares</a></li>
-                    <li><a href="habitaciones.html">Habitaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+        <header>
+            <nav class="navbar bg-1 fg-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">🌊 Bahía Esmeralda</a>
+                    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                    </button>
+                    <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo02" aria-labelledby="navbarTogglerDemo02Label">
+                        <div class="drawer-header">
+                            <h5 class="drawer-title" id="navbarTogglerDemo02Label">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                        </div>
+                        <div class="drawer-body">
+                            <ul class="navbar-nav me-auto mb-2">
+                              <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="ciudad.html">Ciudad</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="lugares.html">Lugares</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="btn btn-outline-light ms-lg-2" href="reserva.html">Contacto</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </dialog>
+                </div>
             </nav>
         </header>
         <main>
@@ -32,38 +60,37 @@
             <section>
                 <h2>Descubri lo que te espera</h2>
                 <p>Elegi qué querés explorar hoy en Bahia Esmeralda</p>
-                <article>
-                    
-                   <div>
-                        <h3>Sobre la Ciudad</h3>
-                        <img src="Multimedia/Imagen/Imagen-Ciudad.jpeg" alt="Imagen de la ciudad." width="200">
-                        <p>Descubri la historia de Costa del Alba, nuestras costumbres locales, arquitectura y tradiciones. </p>
-                        <a href="ciudad.html">Conocé mas de nuestra Ciudad</a>
+                <article class="card" style="max-width: 400px">
+                    <img src="Multimedia/Imagen/Imagen-Ciudad.jpeg" alt="Imagen de la ciudad." width="200">
+                   <div class="card-body" >
+                        <h3 class="card-title">Sobre la Ciudad</h3> 
+                        <p class="card-text">Descubri la historia de Costa del Alba, nuestras costumbres locales, arquitectura y tradiciones. </p>
+                        <a href="ciudad.html" class="btn-solid theme-primary">Conocé mas de nuestra Ciudad</a>
                    </div>
                 </article>
-                <article>
-                    <div>
-                        <h3>Atractivos Turisticos</h3>
-                        <img src="Multimedia/Imagen/AtraccionTuristica.jpeg" alt="Imagen de una atraccion turistica." width="200">
-                        <p>Conocé la Playa Esmeralda, el Mirador del Faro y nuestras reservas naturales.</p>
-                        <a href="lugares.html">Ver Lugares</a>
+                <article class="card" style="max-width: 400px">
+                    <img src="Multimedia/Imagen/AtraccionTuristica.jpeg" alt="Imagen de una atraccion turistica." width="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Atractivos Turisticos</h3>
+                        <p class="card-text">Conocé la Playa Esmeralda, el Mirador del Faro y nuestras reservas naturales.</p>
+                        <a href="lugares.html" class="btn-solid theme-primary">Ver Lugares</a>
                     </div>
                 </article>
-                <article>
-                    <div>
-                        <h3>Nuestras Habitaciones</h3>
-                        <img src="Multimedia/Imagen/ImagenDeHabataciones.jpeg" alt="Imagen de una habitacion." width="200">
-                        <p>Opciones desde habitaciones clasicas hasta la Suit Esmeralda con jacuzzi. </p>
-                        <a href="habitaciones.html">Ver Habitaciones disponibles</a>
+                <article class="card" style="max-width: 400px">
+                    <img src="Multimedia/Imagen/ImagenDeHabataciones.jpeg" alt="Imagen de una habitacion." width="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Nuestras Habitaciones</h3>
+                        <p class="card-text">Opciones desde habitaciones clasicas hasta la Suit Esmeralda con jacuzzi. </p>
+                        <a href="habitaciones.html" class="btn-solid theme-primary">Ver Habitaciones disponibles</a>
                     </div>
                 </article>
             </section>
         </main>
-        <footer>
-            <div class="copyright-footer">
+        <footer >
+            <div class="footer">
                 <p><strong>Bahia Esmeralda &copy; 2026</strong> - Costa del Alba | <a href="contacto.html">Contactanos</a></p>
             </div>
         </footer>    
-       
+       <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
     </body>
 </html> 
