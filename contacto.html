@@ -14,16 +14,30 @@
     <link rel="stylesheet" href="/estilos.css" />
   </head>
   <body class="body">
-    <header class="navbar">
-            <h1 class="logo">🌊 Bahia Esmeralda</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="ciudad.html">Ciudad</a></li>
-                    <li><a href="lugares.html">Lugares</a></li>
-                    <li><a href="habitaciones.html">Habitaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+    <header>
+            <nav class="navbar md:navbar-expand mi-barra-personalizada bg-1 fg-2">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">🌊 Bahía Esmeralda</a>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo01" aria-labelledby="navbarTogglerDemo01Label">
+                  <div class="drawer-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                  </div>
+                  <div class="drawer-body">
+                    <ul class="navbar-nav ms-auto mb-2 md:mb-0">
+                      <!--Cambie el "me-auto" por "ms-auto" despues de eliminar el formuario de buqueda para acomodar el menu hacia la derecha-->
+                      <!--"ms-auto" lo utilice para pasar el menu todo hacia la derecha, ocupando el lugar del buscador -->
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                      <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                      <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                  </div>
+                </dialog>
+              </div>
             </nav>
         </header>
     <main>
@@ -32,10 +46,10 @@
           <h3 class="h3">Contactanos</h3>
           <p class="p">¿Tienes alguna pregunta? ¡Contáctanos!</p>
           <div>
-            <a href="Tel: +54 299 555-0187" class="link-contacto "><strong>Llamanos!</strong></a>
+            <a href="Tel: +54 299 555-0187" class="link-contacto" rel="noopener noreferrer"><strong>Llamanos!</strong></a>
           </div>
           <div>
-            <a href="mailto: contacto@bahiaesmeralda.com.ar" class="link-contacto"><strong>Envíanos un correo!</strong></a>
+            <a href="mailto: contacto@bahiaesmeralda.com.ar" class="link-contacto" rel="noopener noreferrer"><strong>Envíanos un correo!</strong></a>
           </div>
           <h3 class="h3">Acercate a Avenida Costanera 1250, esquina Calle Gaviotas. (9.00hs a 18.00hs)</h3>
           <div class="formulario-box">
