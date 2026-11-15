@@ -20,6 +20,16 @@
 
 }
 
+.modo-oscuro{
+    --color-principal: #36B6AE;
+    --color-secundario: #8CCDD5;
+    --color-títulos: #E6F1F2;
+    --color-fondo-body: #18252D;
+    --color-fondo-header: #102F3A;
+    --color-fondo-footer: #0B1B23;
+    --color-hipervinculo: #F2C96D;
+}
+
 /* BODYS */
 
 body {
