@@ -276,31 +276,13 @@ header .navbar-nav .nav-link:hover {
     margin-bottom: 40px;
 }
 
-.btn-solid{
-    display: inline-block;
-    padding: 12px 28px;
-
-    background-color: #0c4757;
+.btn{
+    background-color: #0d6081;
     color: #ffffff;
     border: none;
-    border-radius: 6px;
 
     font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-solid:hover{
-    background-color: #4ee1c7;
-    color: #28778d;
-    transform: translateY(-2px);
-}
-.btn-solid:active{
-    transform: translateY(0);
+    font-weight: bold;  
 }
 
 /*--------------Titulo de Seccion---------------------------------*/
@@ -315,15 +297,13 @@ header .navbar-nav .nav-link:hover {
     color: var(--color-subtítulos);    
     font-size: 2.2rem;   
     font-weight: bold;   
-    margin-bottom: 12px; 
 }
 
-.titulo-seccion p{
+.titulo-seccion p{ 
     color: var(--color-subtítulos);  
     font-size: 1.1rem ;
 }
 /*----------------------------------------------------------------*/
-
 
 .card{
     display: flex;
