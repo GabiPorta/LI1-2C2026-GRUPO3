@@ -20,7 +20,7 @@
 
 }
 
-.modo-oscuro{
+:root.modo-oscuro{
     --color-principal: #36B6AE;
     --color-secundario: #8CCDD5;
     --color-títulos: #E6F1F2;
