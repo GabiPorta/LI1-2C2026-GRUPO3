@@ -16,6 +16,12 @@ formulario.addEventListener("submit", function(event) {
         return;
     }
 
+    if(!correo.includes("@")) {
+        estado.textContent = "Por favor, ingresa un correo electrónico válido.";
+        estado.style.color = "red";
+        return;
+    }
+
     estado.textContent = "¡Formulario enviado con éxito!";
     estado.style.color = "green";
 
