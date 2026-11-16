@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Hoja de estilos -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     
 </head>
@@ -20,29 +20,40 @@
 
     <!-- Cabecera -->
    <header>
-            <nav class="navbar md:navbar-expand mi-barra-personalizada bg-1 fg-2">
+            <nav class="navbar navbar-expand-lg mi-barra-personalizada"> 
               <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">🌊 Bahía Esmeralda</a>
-                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                <h1>🌊 Bahía Esmeralda</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo01" aria-labelledby="navbarTogglerDemo01Label">
-                  <div class="drawer-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-                  </div>
-                  <div class="drawer-body">
-                    <ul class="navbar-nav ms-auto mb-2 md:mb-0">
-                      <!--Cambie el "me-auto" por "ms-auto" despues de eliminar el formuario de buqueda para acomodar el menu hacia la derecha-->
-                      <!--"ms-auto" lo utilice para pasar el menu todo hacia la derecha, ocupando el lugar del buscador -->
-                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-                      <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
-                      <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
-                      <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
-                      <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ciudad.html">Ciudad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="lugares.html">Lugares</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                  </div>
-                </dialog>
+                </div>
               </div>
+              <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
             </nav>
         </header>
 
@@ -54,21 +65,21 @@
         <section class="galeria-lugares">
             
             <article class="tarjeta-lugar" id="Bahia de las Perlas">
-                <h3 class="h3">Bahía de las Perlas</h3>
+                <h3 class="card-title">Bahía de las Perlas</h3>
                 <img src="Multimedia/Imagen/bahia-de-las-perlas.jpg" alt="Cabañas sobre el agua en Bahía de las Perlas" loading="lazy">
-                <p>Aguas cristalinas de color turquesa y cabañas tradicionales construidas sobre el mar. El lugar ideal para descansar y disfrutar del atardecer más hermoso del océano.</p>
+                <p class="card-text">Aguas cristalinas de color turquesa y cabañas tradicionales construidas sobre el mar. El lugar ideal para descansar y disfrutar del atardecer más hermoso del océano.</p>
             </article>
 
             <article class="tarjeta-lugar" id="Acantilados de Esmeralda">
-                <h3 class="h3">Acantilados de Esmeralda</h3>
+                <h3 class="card-title">Acantilados de Esmeralda</h3>
                 <img src="Multimedia/Imagen/acantilados-de-esmeralda.jpeg" alt="Formaciones rocosas y playa en Acantilados de Esmeralda" loading="lazy">
-                <p>Formaciones rocosas milenarias que se elevan sobre el mar. Miradores naturales con vistas panorámicas impresionantes y playas de arena blanca protegidas por la vegetación nativa.</p>
+                <p class="card-text">Formaciones rocosas milenarias que se elevan sobre el mar. Miradores naturales con vistas panorámicas impresionantes y playas de arena blanca protegidas por la vegetación nativa.</p>
             </article>
 
             <article class="tarjeta-lugar" id="Playa del Sol Naciente">
-                <h3 class="h3">Playa del Sol Naciente</h3>
+                <h3 class="card-title">Playa del Sol Naciente</h3>
                 <img src="Multimedia/Imagen/playa-del-sol-naciente.jpg" alt="Muelle de madera y aguas transparentes en Playa del Sol Naciente" loading="lazy">
-                <p>Una playa de ensueño con arena blanca y aguas calmadas. Su muelle de madera es el punto favorito para ver salir el sol y disfrutar de paseos en embarcaciones tradicionales.</p>
+                <p class="card-text">Una playa de ensueño con arena blanca y aguas calmadas. Su muelle de madera es el punto favorito para ver salir el sol y disfrutar de paseos en embarcaciones tradicionales.</p>
             </article>
 
         </section>
@@ -76,8 +87,9 @@
 
     <!-- Pie de página -->
     <footer class="footer">
-        <p><strong>Bahia Esmeralda &copy; 2026</strong> - Esmeralda Social | <a href="contacto.html">Contactanos</a></p>
+        <p><strong>Bahia Esmeralda &copy; 2026</strong> - Esmeralda Social | <a  class="link-footer" href="contacto.html">Contactanos</a></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="modo-oscuro.js"></script>
 </body>
 </html>

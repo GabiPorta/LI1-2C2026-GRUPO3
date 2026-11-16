@@ -12,7 +12,9 @@
 
     --color-principal: #159A9C;
     --color-secundario: #176B87;
-    --color-títulos: #123B4A;
+    --color-títulos: #E6F1F2;
+    --color-subtítulos: #082C3A;
+    --color-cards: #082C3A;
     --color-fondo-body: #F4F1E8;
     --color-fondo-header: #0F7C7E;
     --color-fondo-footer: #082C3A;
@@ -20,10 +22,12 @@
 
 }
 
-.modo-oscuro{
+:root.modo-oscuro{
     --color-principal: #36B6AE;
     --color-secundario: #8CCDD5;
     --color-títulos: #E6F1F2;
+    --color-subtítulos: #E6F1F2;
+    --color-cards: #082C3A;
     --color-fondo-body: #18252D;
     --color-fondo-header: #102F3A;
     --color-fondo-footer: #0B1B23;
@@ -46,7 +50,12 @@ body {
     background-color: var(--color-fondo-body);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 
+}
+
+main{
+    flex: 1;
 }
 
 .link-body {
@@ -65,7 +74,7 @@ body {
 
 .h2 {
 
-    color: var(--color-fondo-body);
+    color: var(--color-subtítulos);
     padding: 0 10px;
 
 }
@@ -96,13 +105,12 @@ header .navbar-nav {
 .navbar-brand{
     font-size: 1.8rem;
     margin: 0;
-    color: #cddddd;
+    color: var(--color-texto-navbar);
 }
-
 
 /* Estilo para los textos y enlaces dentro del panel desplegable */
 header .navbar-nav .nav-link{
-    color: #ffffff !important;
+    color: var(--color-texto-navbar) !important;
     padding: 10px 0 !important;
     
 }
@@ -143,26 +151,19 @@ header .navbar-nav .nav-link:hover {
 
 .ciudad ol{
     list-style-type: disc;
-    color: var(--color-títulos);
+    color: var(--color-subtítulos);
 }
 
 .ciudad ol li a{
-    color: var(--color-títulos);
+    color: var(--color-subtítulos);
     text-decoration: none;
 }
 
 .ciudad ol li a:hover{
     color: var(--color-hipervinculo);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.card-title{
-    color: var(--color-títulos);
-}
-
-.card-text{
-    color: var(--color-títulos);
-}
 /* FIN DE CIUDAD (BOOTSTRAP 5) */
 
 
@@ -172,7 +173,7 @@ header .navbar-nav .nav-link:hover {
 
 .h3 {
 
-    color: var(--color-títulos);
+    color: var(--color-subtítulos);
     margin: 20px 0 10px 0;
     padding: 0 10px;
 
@@ -180,7 +181,7 @@ header .navbar-nav .nav-link:hover {
 
 .p {
 
-    color: var(--color-títulos);
+    color: var(--color-subtítulos);
     margin: 20px 0 10px 0;
     padding: 0 10px;
 
@@ -198,7 +199,7 @@ header .navbar-nav .nav-link:hover {
 
     width: 100px;
     padding: 0 10px;
-    color: var(--color-títulos);
+    color: var(--color-subtítulos);
 
 }
 
@@ -232,7 +233,7 @@ header .navbar-nav .nav-link:hover {
 
 .link-contacto {
 
-    color: var(--color-fondo-footer);
+    color: var(--color-subtítulos);
     text-decoration: none;
     padding: 0 10px;
 
@@ -293,17 +294,53 @@ header .navbar-nav .nav-link:hover {
 }
 
 .titulo-seccion h2{
-    color: #0b3c40;    
+    color: var(--color-subtítulos);    
     font-size: 2.2rem;   
     font-weight: bold;   
 }
 
-.titulo-seccion p{
-    color: #3a3a3a;  
+.titulo-seccion p{ 
+    color: var(--color-subtítulos);  
     font-size: 1.1rem ;
 }
 /*----------------------------------------------------------------*/
 
+.card{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px 28px;
+}
+
+.card-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-cards);
+}
+
+.card-text{
+    font-size: 1rem;
+    font-style:  sans-serif;
+    color: var(--color-cards);
+    
+}
+.btn-solid{
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;   /* Quita el subrayado de los enlaces si usás un <a> */    
+    text-align: center;
+
+}
+
+.card-img-top{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0.8rem 0 1.2rem;
+    display: block;
+}
 
 /* FOOTERS */
 
@@ -313,7 +350,7 @@ header .navbar-nav .nav-link:hover {
     text-align: center;
     padding: 15px 20px;
     font-size: 0.85rem;
-    color: #a0a0a0;
+    color: var(--color-títulos);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 10px;
 
@@ -324,6 +361,13 @@ header .navbar-nav .nav-link:hover {
     color: var(--color-hipervinculo);
     text-decoration: none;
     padding: 0 10px;
+
+}
+
+.link-footer:hover {
+
+    text-decoration: none;
+    color: var(--color-principal);
 
 }
 /* ======================================
