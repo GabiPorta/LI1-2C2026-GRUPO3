@@ -275,31 +275,13 @@ header .navbar-nav .nav-link:hover {
     margin-bottom: 40px;
 }
 
-.btn-solid{
-    display: inline-block;
-    padding: 12px 28px;
-
-    background-color: #0c4757;
+.btn{
+    background-color: #0d6081;
     color: #ffffff;
     border: none;
-    border-radius: 6px;
 
     font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-solid:hover{
-    background-color: #4ee1c7;
-    color: #28778d;
-    transform: translateY(-2px);
-}
-.btn-solid:active{
-    transform: translateY(0);
+    font-weight: bold;  
 }
 
 /*--------------Titulo de Seccion---------------------------------*/
@@ -314,45 +296,14 @@ header .navbar-nav .nav-link:hover {
     color: #0b3c40;    
     font-size: 2.2rem;   
     font-weight: bold;   
-    margin-bottom: 12px; 
 }
 
 .titulo-seccion p{
-    color: #666666;  
+    color: #3a3a3a;  
     font-size: 1.1rem ;
 }
 /*----------------------------------------------------------------*/
 
-
-.card{
-    display: flex;
-    align-items: center;
-    margin: auto;
-    padding: 10px 28px;
-}
-
-.card-text{
-    font-size: 1rem;
-    font-style:  sans-serif;
-    
-}
-.btn-solid{
-    font-size: 1rem;
-    border: none;
-    font-weight: bold;
-    text-decoration: none;   /* Quita el subrayado de los enlaces si usás un <a> */    
-    text-align: center;
-
-}
-
-.card-img-top{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 0.8rem 0 1.2rem;
-    display: block;
-}
 
 /* FOOTERS */
 
