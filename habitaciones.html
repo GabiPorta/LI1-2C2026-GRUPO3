@@ -8,39 +8,51 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Hoja de estilos -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="body">
 
     <!-- Cabecera -->
    <header>
-            <nav class="navbar md:navbar-expand mi-barra-personalizada bg-1 fg-2">
+            <nav class="navbar navbar-expand-lg mi-barra-personalizada"> 
               <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">🌊 Bahía Esmeralda</a>
-                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                <h1>🌊 Bahía Esmeralda</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo01" aria-labelledby="navbarTogglerDemo01Label">
-                  <div class="drawer-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-                  </div>
-                  <div class="drawer-body">
-                    <ul class="navbar-nav ms-auto mb-2 md:mb-0">
-                      <!--Cambie el "me-auto" por "ms-auto" despues de eliminar el formuario de buqueda para acomodar el menu hacia la derecha-->
-                      <!--"ms-auto" lo utilice para pasar el menu todo hacia la derecha, ocupando el lugar del buscador -->
-                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-                      <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
-                      <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
-                      <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
-                      <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ciudad.html">Ciudad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="lugares.html">Lugares</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                  </div>
-                </dialog>
+                </div>
               </div>
+              <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
             </nav>
         </header>
 
@@ -53,9 +65,9 @@
             
             <!-- Habitación 1 -->
             <article class="tarjeta-lugar" id="standard">
-                <h3 class="h3">Habitación Estándar</h3>
+                <h3 class="card-title">Habitación Estándar</h3>
                 <img src="Multimedia/Imagen/habitacion-estandar.jpg" alt="Habitación Estándar con vista al jardín" loading="lazy">
-                <p>Acogedora y luminosa, ideal para parejas. Cuenta con cama doble, baño privado, aire acondicionado y balcón con vista a los jardines tropicales.</p>
+                <p class="card-text">Acogedora y luminosa, ideal para parejas. Cuenta con cama doble, baño privado, aire acondicionado y balcón con vista a los jardines tropicales.</p>
                 <p><strong>Capacidad:</strong> 2 personas</p>
                 <p><strong>Servicios:</strong> Wi-Fi gratis, TV, minibar</p>
                 <p class="precio">Desde $85.000 por noche</p>
@@ -63,9 +75,9 @@
 
             <!-- Habitación 2 -->
             <article class="tarjeta-lugar" id="deluxe">
-                <h3 class="h3">Deluxe Vista al Mar</h3>
+                <h3 class="card-title">Deluxe Vista al Mar</h3>
                 <img src="Multimedia/Imagen/habitacion-deluxe.jpg" alt="Habitación Deluxe con vista frontal al mar" loading="lazy">
-                <p>Amplia habitación con ventanales panorámicos. Disfruta del amanecer directamente desde tu cama. Incluye terraza privada, baño con bañera y servicio de habitaciones 24hs.</p>
+                <p class="card-text">Amplia habitación con ventanales panorámicos. Disfruta del amanecer directamente desde tu cama. Incluye terraza privada, baño con bañera y servicio de habitaciones 24hs.</p>
                 <p><strong>Capacidad:</strong> 2 personas</p>
                 <p><strong>Servicios:</strong> Wi-Fi, TV Smart, desayuno incluido, caja fuerte</p>
                 <p class="precio">Desde $145.000 por noche</p>
@@ -73,9 +85,9 @@
 
             <!-- Habitación 3 -->
             <article class="tarjeta-lugar" id="suite">
-                <h3 class="h3">Suite Presidencial</h3>
+                <h3 class="card-title">Suite Presidencial</h3>
                 <img src="Multimedia/Imagen/habitacion-suite.jpg" alt="Suite Presidencial con piscina privada" loading="lazy">
-                <p>Nuestra opción más exclusiva: amplios espacios, sala de estar independiente y piscina privada sobre el mar. Diseñada para quienes buscan lo mejor. Atención personalizada incluida.</p>
+                <p class="card-text">Nuestra opción más exclusiva: amplios espacios, sala de estar independiente y piscina privada sobre el mar. Diseñada para quienes buscan lo mejor. Atención personalizada incluida.</p>
                 <p><strong>Capacidad:</strong> Hasta 4 personas</p>
                 <p><strong>Servicios:</strong> Todo incluido, traslado privado, conserje, barra libre</p>
                 <p class="precio">Desde $320.000 por noche</p>
@@ -86,8 +98,9 @@
 
     <!-- Pie de página -->
     <footer class="footer">
-        <p><strong>Bahia Esmeralda &copy; 2026</strong> - Esmeralda Social | <a href="contacto.html">Contactanos</a></p>
+        <p><strong>Bahia Esmeralda &copy; 2026</strong> - Esmeralda Social  | <a  class="link-footer" href="contacto.html">Contactanos</a></p>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="modo-oscuro.js"></script>
 </body>
 </html>
